@@ -1,3 +1,24 @@
+Using Anaconda Prompt
 
+Create a virtual environment (we will name it test_env, but you can call it whatever you want)
+	conda create --name test_env python=3.6
 
-x
+List all the environment
+	conda info --envs
+
+Activate the environment
+	Windows: activate test_env
+	Linux/macOS: source activate test_env
+
+Go to your cloned project folder and install the requirements on you newly created environment
+	conda install --file requirements.txt
+
+Run your python scripts or jupyter-notebook as usual
+	jupyter-notebook
+
+Deactivate the environment, once you're done for the day
+	Windows: deactivate test_env
+	Linux/macOS: source deactivate test_env
+
+You can remove the environment for once and for all
+	conda remove -n test_env -all
